@@ -23,7 +23,7 @@ const config: ModuleFederationConfig = {
    * declare module 'my-external-remote';
    *
    */
-  remotes: ['products', 'checkout'],
+  remotes: [],
   shared: (libraryName, defaultConfig) => {
     console.log("RUNTIME SHARED LIB ===>", libraryName, defaultConfig)
     if (!coreLibraries.has(libraryName)) {
